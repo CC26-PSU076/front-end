@@ -20,7 +20,7 @@ export function LoginForm({
       <form>
         <FieldGroup>
           <div className="flex flex-col items-center gap-2 text-center mb-8">
-            <h1 className="text-xl font-bold">Welcome to YourPath</h1>
+            <h1 className="text-xl font-bold mt-8">Welcome to YourPath</h1>
             <FieldDescription>
               Don&apos;t have an account? <Link to="/register">Register</Link>
             </FieldDescription>
