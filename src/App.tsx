@@ -1,8 +1,10 @@
-import HomePage from "./pages/homepage.tsx"
+import HomePage from "./pages/home.tsx"
+import ResultPage from "./pages/result.tsx"
 
 export function App() {
   return (
-    <HomePage/>
+    // <HomePage/>
+    <ResultPage/>
   )
 }
 
