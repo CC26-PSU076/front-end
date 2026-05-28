@@ -9,6 +9,7 @@ import {
   FieldLabel,
 } from "@/components/ui/field"
 import { Input } from "@/components/ui/input"
+import { Link } from "react-router-dom"
 
 export function LoginForm({
   className,
@@ -21,7 +22,7 @@ export function LoginForm({
           <div className="flex flex-col items-center gap-2 text-center mb-8">
             <h1 className="text-xl font-bold">Welcome to YourPath</h1>
             <FieldDescription>
-              Don&apos;t have an account? <a href="#">Sign up</a>
+              Don&apos;t have an account? <Link to="/register">Register</Link>
             </FieldDescription>
           </div>
           <Field>

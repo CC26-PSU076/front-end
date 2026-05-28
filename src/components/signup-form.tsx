@@ -1,5 +1,3 @@
-"use client"
-
 import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
 import {
@@ -9,6 +7,7 @@ import {
   FieldLabel,
 } from "@/components/ui/field"
 import { Input } from "@/components/ui/input"
+import { Link } from "react-router-dom"
 
 export function SignupForm({
   className,
@@ -21,7 +20,7 @@ export function SignupForm({
           <div className="flex flex-col items-center gap-2 text-center mb-8">
             <h1 className="text-xl font-bold">Welcome to YourPath</h1>
             <FieldDescription>
-              Already have an account? <a href="#">Sign in</a>
+              Already have an account? <Link to="/login">Login</Link>
             </FieldDescription>
           </div>
           <Field>
