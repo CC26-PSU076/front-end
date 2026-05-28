@@ -59,7 +59,7 @@ export default function HomePage() {
         {/* Upload Area */}
         <div className="mt-12">
           <p className="text-center text-muted-foreground">
-            Drop your CV,<br/><span>get your insights.</span>
+            Upload your CV,<br/><span>get your insights.</span>
           </p>
 
           {!file ? (
@@ -67,7 +67,7 @@ export default function HomePage() {
               <EmptyHeader>
                 <IconUpload />
                 <EmptyDescription className="mt-4">
-                  Click to browse <br/> <span>and upload your CV</span>
+                  Drop your CV here.
                 </EmptyDescription>
               </EmptyHeader>
               <EmptyContent>
