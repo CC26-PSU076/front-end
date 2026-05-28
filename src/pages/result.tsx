@@ -9,7 +9,7 @@ export default function ResultPage() {
         <div className="flex min-h-svh p-6 items-center justify-center">
         <div className="flex max-w-md min-w-0 flex-col gap-4 text-sm leading-loose">
             <Button 
-                className="text-white hover:text-white/80 w-fit justify-start pl-0" 
+                className="text-white hover:text-white/80 w-fit justify-start pl-0 mt-6" 
                 variant="link"
                 onClick={() => navigate("/")}
                 >
@@ -23,7 +23,7 @@ export default function ResultPage() {
                 6
                 </div>
                 <h2>Teknisi Analis</h2>
-                <h3 className="font-bold">Data Scientist Supervisor</h3>
+                <h3 className="font-bold text-xl">Data Scientist Supervisor</h3>
             </div>
             <div className="text-center text-white/85 leading-tight mt-8">
                 <h4>Recommendation for<br/><span>Career Development</span></h4>
