@@ -25,7 +25,7 @@ export default function ResultPage() {
                 <h2>Teknisi Analis</h2>
                 <h3 className="font-bold">Data Scientist Supervisor</h3>
             </div>
-            <div className="text-center text-white/85 leading-tight">
+            <div className="text-center text-white/85 leading-tight mt-8">
                 <h4>Recommendation for<br/><span>Career Development</span></h4>
                 <div className="flex flex-col mt-4 gap-4">
                 <Card>

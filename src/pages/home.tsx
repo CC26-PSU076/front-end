@@ -7,7 +7,7 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
-import { IconUpload, IconFile, IconX } from "@tabler/icons-react"
+import { IconUpload, IconFile, IconX, IconChevronDown } from "@tabler/icons-react"
 import {
   Empty,
   EmptyContent,
@@ -36,12 +36,14 @@ export default function HomePage() {
     <div className="flex min-h-svh p-6 items-center justify-center">
       <div className="flex max-w-md min-w-0 flex-col gap-4 text-sm leading-loose">
         
-        {/* Header */}
         <div className="flex flex-col items-center text-center">
           <h1 className="font-bold text-2xl">YourPath</h1>
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
-              <Button className="px-12 rounded-2xl">Data Science</Button>
+              <Button className="px-12 rounded-2xl w-48 relative">
+                <span className="w-full text-center">Data Science</span>
+                <IconChevronDown stroke={2} className="absolute right-3" />
+              </Button>
             </DropdownMenuTrigger>
             <DropdownMenuContent>
               <DropdownMenuGroup>
@@ -56,9 +58,8 @@ export default function HomePage() {
           </DropdownMenu>
         </div>
 
-        {/* Upload Area */}
         <div className="mt-12">
-          <p className="text-center text-muted-foreground">
+          <p className="text-center leading-tight text-muted-foreground">
             Upload your CV,<br/><span>get your insights.</span>
           </p>
 
@@ -87,12 +88,12 @@ export default function HomePage() {
             </Empty>
 
           ) : (
-            <div className="border border-primary/40 bg-primary/5 rounded-lg mt-4 h-60 flex flex-col items-center justify-center gap-3">
+            <div className="border border-primary/40 bg-primary/5 rounded-lg mt-4 h-60 w-60 flex flex-col items-center justify-center gap-3">
               <IconFile size={36} className="text-primary" />
               <div className="text-center px-4">
                 <p className="font-medium text-sm w-60">{file.name}</p>
                 <p className="text-xs text-muted-foreground">
-                  {(file.size / 1024).toFixed(1)} KB · PDF
+                  {(file.size / 1024).toFixed(1)} KB
                 </p>
               </div>
               <Button
@@ -110,7 +111,6 @@ export default function HomePage() {
         <Button className="p-4 rounded-2xl" disabled={!file}>
           Analyze
         </Button>
-
       </div>
     </div>
   )
