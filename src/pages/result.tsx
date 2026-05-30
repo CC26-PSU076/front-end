@@ -54,6 +54,13 @@ export default function ResultPage() {
                 </Card>
                 </div>
             </div>
+            <Button
+                className="text-white hover:text-white/80 "
+                variant="link"
+                onClick={() => navigate("/register")}
+                >
+                Save my result!
+            </Button>
         </div>
         </div>
     )

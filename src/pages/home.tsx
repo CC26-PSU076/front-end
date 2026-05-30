@@ -14,8 +14,11 @@ import {
   EmptyDescription,
   EmptyHeader,
 } from "@/components/ui/empty"
+import { useNavigate } from "react-router-dom"
 
 export default function HomePage() {
+  const navigate = useNavigate()
+
   const [file, setFile] = useState<File | null>(null)
 
   const handleFile = (selectedFile: File) => {
@@ -110,6 +113,13 @@ export default function HomePage() {
 
         <Button className="p-4 rounded-2xl" disabled={!file}>
           Analyze
+        </Button>
+        <Button
+            className="text-white hover:text-white/80 "
+            variant="link"
+            onClick={() => navigate("/login")}
+            >
+            Already have an account?
         </Button>
       </div>
     </div>
